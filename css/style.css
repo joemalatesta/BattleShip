@@ -1,0 +1,243 @@
+ body {
+  background: url("../images/ocean.jpg");
+  background-color: black;
+  position: relative;
+  margin: auto;
+  height: 950px;
+  width: 800px;
+}
+h1 {
+  font-size: 80px;
+  font-family: Luckiest Guy;
+
+}
+.completeBoard {
+  height: 800px;
+  width: 800px;
+
+  /* background-color: #505053; */
+  display: block;
+  justify-content: center;
+}
+.container {
+  width: 400px;
+  margin: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.boardTop {
+  height: 40px;
+  width: 440px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.boardSideAndMainBoard {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 400px;
+  width: 440px;
+}
+.boardSide {
+  height: 400px;
+  width: 40px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+}
+.container2{
+  width: 200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.allBoards {
+  margin: auto;
+  justify-content: center;
+  height: 440px;
+  width: 440px;
+}
+.container3 {
+  width: 230px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.container4 {
+  width: 230px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.fButton {
+  height: 40px;
+  width: 40px;
+  background: grey;
+  border-radius: 10px;
+  border-style: ridge;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.nButton {
+  height: 40px;
+  width: 40px;
+  background: grey;
+  border-radius: 10px;
+  border-style: ridge;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.aButton {
+  height: 40px;
+  width: 40px;
+  background: grey;
+  border-radius: 10px;
+  border-style: ridge;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.missSquareComputer {
+  height: 20px;
+  width: 20px;
+  background: #111153;
+}
+.hitSquareComputer {
+  height: 20px;
+  width: 20px;
+  background: red;
+  background: radial-gradient(circle, red 25%, transparent 80%), blue;
+}
+.missSquare {
+  height: 40px;
+  width: 40px;
+  background: blue;
+}
+.hitSquare {
+  height: 40px;
+  width: 40px;
+  background: red;
+  background: radial-gradient(circle, red 25%, transparent 80%), blue;
+}
+h1, h2, h3 {
+  font-family: Luckiest Guy;
+  text-align: center;
+  color: #ffe312;
+}
+.square {
+  height: 40px;
+  flex-basis: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.computerSqr {
+  background-color: #111153;
+  height: 20px;
+  flex-basis: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  textbox: "X";
+}
+.computerSqrBoat {
+  background-color: #607d8b;
+  height: 20px;
+  flex-basis: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomRow {
+  height: 200px;
+  width: 800px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.buttons {
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+.aboutGame {
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: Luckiest Guy;
+	cursor: pointer;
+}
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+  display: none;
+}
+#modal-textbox {
+  background: url("../images/Battleships.jpg");
+  background-color: gold;
+  font-size: 16px;
+  font-weight: 900;
+	height: 620px;
+	width: 600px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 20px 18px 2px 0 #010e8566;
+  padding: 2%;
+  line-height: 120%;
+}
+#modal-footer {
+	text-align: right;
+}
+h2 {
+	padding-bottom: 15px;
+}
+.launchButton {
+  /* margin: auto;
+  display: flex; */
+  height: 40px;
+  width: 100px;
+  /* background: #8a3535;
+  border-radius: 10px;
+  border-style: ridge;
+  align-items: center;
+  justify-content: center;
+  text-align: center; */
+}
+
+
+
+
+
+
+
+
+
+
+/* end */

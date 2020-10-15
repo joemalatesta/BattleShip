@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BattleShip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>BATTLE SHIP</h1>
+    <div id="modal">
+      <div id="modal-textbox">
+
+        <h4>Learn to Play</h4>
+          <p>Battle Ship is a classic board game that gets you to destroy your enemys ships. You have five ships that are placed on a ten by ten grid. The object is to take turns "launching" missiles at your opponents grid. To launch a missile you first need to select an alpha button. Those are the letters A-J. Those letters correspond with the rows running left to right, "A" being at the top of the grid and "J" being at the bottom. After you select the alpha character you then choose a numeric button. These are the numbers 1-10. These numbers correspond with the columns, those rows running up and down, 1 being the number to the left and 10 to the right.</p>
+          <p>Once you have set you coordinates, you are now ready to launch your missiles. Just push the 'FIRE' button to do this. If you are successful with your aim you will see a tile turn over on the Main Battle Field. This tile will now show a red explosion marking a hit on your enemies fleet. If your aim was slightly off, your missiles will go silently down into the ocean. </p>
+          <p>Your opponent, a second player or the computer, now has the chance to return fire at your fleet. Your ships are located on the Your Fleet Location grid. </p>
+          <p>Get to your battleship......THE HUNT IS ON!</p>
+          <div id="modal-footer">
+            <button class="modal-buttons" id="close" href="#">Close</button>
+          </div>
+      </div>
+    </div>
+    <div class="completeBoard">
+      <div class="allBoards">
+        <div class="boardTop"></div>
+        <div class="boardSideAndMainBoard">
+          <div class="boardSide"></div>
+          <div class="container"></div>
+        </div>
+      </div>
+      <div class="buttonRow">
+        <button id="openModal">About the Game</button>
+      </div>
+        <div class="bottomRow">
+        <div class="container3"></div>
+        <div class="container2"></div>
+        <div class="container4"></div>
+      </div>
+      <h3>Your fleet location</h3>
+    </div>
+    <script type="text/javascript" src="js/build.js"></script>
+    <script type="text/javascript" src="js/mainPlayer.js"></script>
+    <script type="text/javascript" src="js/computer.js"></script>
+    <script type="text/javascript" src="js/player2.js"></script>
+    <script type="text/javascript" src="js/jQuerymain.js"></script>
+  </body>
+</html>
