@@ -77,14 +77,12 @@ const makeBoard = () => { //builds 100 spaces for gameplay
 
 
 const placeShip = (shipLength) => { //pushes to player or computer ship locations
-  console.log(shipLength)
 
   let locOfShip = randomNumber(board) //gets random location from board
   let strsplit = locOfShip.split("")//
-  console.log(strsplit)
   let k = shipLength + column.indexOf(strsplit[0])
-  console.log(strsplit[0])
-  console.log(shipLength + column.indexOf(strsplit[0]))
+  // console.log(strsplit[0])
+  // console.log(shipLength + column.indexOf(strsplit[0]))
   //places the ship horizontal or vertical
   strsplit.shift()
   strsplit = strsplit.join("")
@@ -93,15 +91,10 @@ const placeShip = (shipLength) => { //pushes to player or computer ship location
   let vertOrHorzl = randomNumber(alignment)
 
   let m = Number(shipLength) + Number(strsplit)
-  console.log(strsplit)
-  console.log(m)
-  console.log(shipLength + row.indexOf(strsplit[0]))
-  console.log(strsplit)
   if (vertOrHorzl == 0) {
     if(m > 9) {
       for(let i = 0; i < shipLength; i++){
         let value = board.indexOf(locOfShip) - i
-        console.log(value + '  1')
         let l = board[value]
         if (shipLoc.includes(l)) {
           while( i > 0) {
@@ -116,7 +109,6 @@ const placeShip = (shipLength) => { //pushes to player or computer ship location
     } else {
       for(let i = 0; i < shipLength; i++){
         let value = board.indexOf(locOfShip) + i
-        console.log(value + "  2")
         let l = board[value]
         if (shipLoc.includes(l)) {
           while( i > 0) {
@@ -134,7 +126,6 @@ const placeShip = (shipLength) => { //pushes to player or computer ship location
     if(k > 9) {
       for(let i = 0; i < shipLength; i++){
         let value = board.indexOf(locOfShip) - i * 10
-        //console.log(value + "  3")
         let l = board[value]
         if (shipLoc.includes(l)) {
           while( i > 0) {
@@ -149,7 +140,6 @@ const placeShip = (shipLength) => { //pushes to player or computer ship location
     } else {
       for(let i = 0; i < shipLength; i++){
         let value = board.indexOf(locOfShip) + i * 10
-        //console.log(value + "  4")
         let l = board[value]
         if (shipLoc.includes(l)) {
           while( i > 0) {
@@ -291,4 +281,3 @@ const makeFireButton = () => {
   const $launchButton = $('.buttonRow').addclass('launchButton')
   $('.buttonRow').append($launchButton)
 }
-console.log(board)
