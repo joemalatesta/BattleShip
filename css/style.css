@@ -218,17 +218,17 @@ h1, h2, h3 {
 h2 {
 	padding-bottom: 15px;
 }
-.launchButton {
-  /* margin: auto;
-  display: flex; */
+#launchButton {
+  margin: auto;
+  display: flex;
   height: 40px;
   width: 100px;
-  /* background: #8a3535;
+  background: #8a3535;
   border-radius: 10px;
   border-style: ridge;
   align-items: center;
   justify-content: center;
-  text-align: center; */
+  text-align: center;
 }
 
 

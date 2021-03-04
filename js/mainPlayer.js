@@ -47,9 +47,8 @@ const chk4fire = () => {
       firstValue = toFireButton[0].toLowerCase()
       secondValue = toFireButton.slice(1)
       target(firstValue, secondValue)
-      setTimeout(function() {
       computerAttack()
-      }, delayInMilliseconds);
+
   }
 }
 const target = (c,r) => { // takes alpha and numeric values from keypads, combines, and passes this to the check for hits function
@@ -67,8 +66,12 @@ const checkForHit = () => { //checks ship location array for the targeted locati
   if(computerShipLoc.includes(targetedLoc[0])) {
     computerShipLoc.splice(computerShipLoc.indexOf(strike[0]), 1);
     usedPlayer1BoardHit.push(strike[0])
+    let audio = new Audio('./sounds/Bomb.mp3');
+    audio.play();
   } else {
     usedPlayer1BoardMiss.push(strike[0])
+    let audio = new Audio('./sounds/Splash.mp3');
+    audio.play();
   }
   computerBoard.splice(computerBoard.indexOf(strike), 1)
   strike.pop()

@@ -12,7 +12,7 @@ const alphaChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 const numChars = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const numChars2 = [null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const newShip = []
-const delayInMilliseconds = 500;//sets computer turn delay
+const delayInMilliseconds = 1;//sets computer turn delay
 const board = [] //stores all useable grid locations
 const player1Board = [] // players available target locations
 const player1ShipLoc = []
@@ -28,6 +28,10 @@ const usedComputerBoardMiss = []
 const usedComputerBoardHit = []
 const playerArray = [player1ShipLoc, player2ShipLoc, computerShipLoc]
 const targetedLoc = [] // players fired shots
+const calledAlphaDigit = $('#calledAlphaDigit')
+let lastComputerHit
+const computerLastHitChoices = [+1, -1, +10, -10]
+
 
 let strike = [] // to hold attack values while function executes
 let toFireButton = []
@@ -36,14 +40,13 @@ let shipLoc = [] // used to build and transfer ship location to players
 
 //************************************* function statements **********************************
 const startGame = () => {
-  let response = prompt("Are you ready to acheive Victory?", "Y / N")
+  let response = prompt("Are you ready to play battleship?", "Y / N")
   response = response.toLowerCase()
   if (response == 'y') {
     alert("If you not sure how to play, read the 'About The Game' down below")
     alert("LETS PLAY BATTLESHIP!")
-      startAttack()
   } else if (response == 'n') {
-      alert('You were eaten!!!')
+      alert('Maybe next time')
   } else {
       alert('This is not what we want')
       startGame()
@@ -276,6 +279,7 @@ const makeAlphaButton = (i) => {
   $aButton.text(alphaChar[i])
   $aButton.attr('id', alphaChar[i])
 }
+
 
 const makeFireButton = () => {
   const $launchButton = $('.buttonRow').addclass('launchButton')
