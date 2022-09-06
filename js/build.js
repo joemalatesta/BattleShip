@@ -40,17 +40,17 @@ let shipLoc = [] // used to build and transfer ship location to players
 
 //************************************* function statements **********************************
 const startGame = () => {
-  let response = prompt("Are you ready to play battleship?", "Y / N")
-  response = response.toLowerCase()
-  if (response == 'y') {
-    alert("If you not sure how to play, read the 'About The Game' down below")
-    alert("LETS PLAY BATTLESHIP!")
-  } else if (response == 'n') {
-      alert('Maybe next time')
-  } else {
-      alert('This is not what we want')
-      startGame()
-    }
+  //let response = prompt("Are you ready to play battleship?", "Y / N")
+  //response = response.toLowerCase()
+  //if (response == 'y') {
+  //  alert("If you not sure how to play, read the 'About The Game' down below")
+  //  alert("LETS PLAY BATTLESHIP!")
+  //} else if (response == 'n') {
+  //    alert('Maybe next time')
+  //} else {
+  //    alert('This is not what we want')
+  //    startGame()
+  //  }
 }
 //************************************** build for background locations *********************************
 const randomNumber = (value) => { //random generator for location and computer attack
